@@ -10,7 +10,7 @@ namespace LogicalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter the program number which is to be executed \n 1. Fibonacci Series \n 2.Perfect Number \n 3. Prime Number \n 4. Reverse Number \n 5. Coupon \n 6. Exit");
+                Console.WriteLine("Enter the program number which is to be executed \n 1. Fibonacci Series \n 2.Perfect Number \n 3. Prime Number \n 4. Reverse Number \n 5. Coupon \n 6. StopWatch \n 7. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -37,12 +37,17 @@ namespace LogicalPrograms
                         Logical cn = new Logical();
                         cn.CouponNumber(N);
                         break;
-
-
-
-
-
                     case 6:
+                        Logical sl = new Logical();
+                        sl.Calculate();
+                        break;
+
+
+
+
+
+
+                    case 7:
                         flag = false;
                         break;
                 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -117,9 +118,9 @@ namespace LogicalPrograms
                 Console.Write($" {array[i]}");
             }
         }
-        public void SimulateStopwatch()
+        public void Calculate()
         {
-            Stopwatch sw = new Stopwatch();
+            System.Diagnostics.Stopwatch sw = new Stopwatch();
             sw.Start();
             for (int i = 0; i < 100; i++)
             {
@@ -129,4 +130,6 @@ namespace LogicalPrograms
             Console.WriteLine("The lepse time is:{0:hh\\:mm\\:ss}", sw.Elapsed);
         }
     }
+
+    
 }
